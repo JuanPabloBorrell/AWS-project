@@ -1,7 +1,10 @@
 provider "aws" {
-    access_key = var.my_access_key
-    secret_key = var.my_secret_key
-    region = var.region
+    access_key = "AKIAVLDWBS7HMQIBMKOP"
+    #access_key = var.my_access_key
+    secret_key = "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"
+    #secret_key = var.my_secret_key
+    region = "eu-central-1"
+    #region = var.region
 }
 
 resource "aws_instance" "web" {
