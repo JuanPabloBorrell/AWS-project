@@ -1,6 +1,6 @@
 provider "aws" {
-    access_key = credential('AWS_credential')
-    secret_key = credential('AWS_credential')
+    #access_key = var.my_access_key
+    #secret_key = var.my_secret_key
     region = "eu-central-1"
 }
 
