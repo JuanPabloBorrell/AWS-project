@@ -1,7 +1,7 @@
 provider "aws" {
-    access_key = var.my_access_key
-    secret_key = var.my_secret_key
-    region = var.region
+    access_key = credential('AWS_credential')
+    secret_key = credential('AWS_credential')
+    region = "eu-central-1"
 }
 
 resource "aws_instance" "web" {
